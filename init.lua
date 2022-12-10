@@ -14,5 +14,4 @@ require("pablo.plugins.lsp.null-ls")
 require("pablo.plugins.autopairs")
 require("pablo.plugins.treesitter")
 require("pablo.plugins.gitsigns")
-
-
+require("pablo.plugins.rust-tools")
