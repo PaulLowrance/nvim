@@ -8,6 +8,10 @@ map.set("i", "jj", "<Esc>")
 
 map.set("n", "<leader>nh", ":nohl<CR>")
 
+-- move highlighted lines up/down
+map.set("v", "J", ":m '>+1<CR>gv=gv")
+map.set("v", "K", ":m '<-2<CR>gv=gv")
+
 -- delete single character without copying into register
 map.set("n", "x", '"_x')
 
