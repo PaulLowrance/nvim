@@ -89,13 +89,16 @@ lspconfig["emmet_ls"].setup({
 	filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
 })
 
-lspconfig["rust-analyzer"].setup({
-	flags = flags,
+--[[ lspconfig["rust-analyzer"].setup({
 	on_attach = on_attach,
 	settings = {
-		["rust-analyzer"] = {},
+		["rust-analyzer"] = {
+			checkOnSave = {
+				command = "clippy",
+			},
+		},
 	},
-})
+}) ]]
 
 -- configure lua server (with special settings)
 lspconfig["sumneko_lua"].setup({
