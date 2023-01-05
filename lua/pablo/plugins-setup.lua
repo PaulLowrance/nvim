@@ -39,6 +39,7 @@ return packer.startup(function(use)
 	use("szw/vim-maximizer") -- maximizes and restores current window
 
 	use("nvim-lualine/lualine.nvim")
+	use("xiyaowong/nvim-transparent")
 
 	------ Navigation  ------
 	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
