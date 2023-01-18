@@ -89,6 +89,8 @@ lspconfig["emmet_ls"].setup({
 	filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
 })
 
+lspconfig["pyright"].setup({})
+
 --[[ lspconfig["rust-analyzer"].setup({
 	on_attach = on_attach,
 	settings = {
