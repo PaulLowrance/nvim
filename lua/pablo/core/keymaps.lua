@@ -43,3 +43,10 @@ map.set("n", "<A-x>", ":bd<CR>") -- deletes the current buffer
 map.set("n", "<leader>sm", ":MaximizerToggle<CR>") --toggle split window to maximum
 
 map.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle nvim tree
+
+-- Telescope bindings
+local builtin = require("telescope.builtin")
+map.set("n", "<leader>ff", builtin.find_files, {})
+map.set("n", "<leader>fg", builtin.live_grep, {})
+map.set("n", "<leader>fb", builtin.buffers, {})
+map.set("n", "<leader>fh", builtin.help_tags, {})
