@@ -49,6 +49,9 @@ return packer.startup(function(use)
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dependency for better sorting performance
 	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- fuzzy finder
 
+	-- buffer navigation with Harpoon
+	use("ThePrimeagen/harpoon")
+
 	------ Editing -------
 	use("tpope/vim-surround") -- change the surrounding chars
 	use("inkarkat/vim-ReplaceWithRegister") -- replace reguister contents using motion (gr + motion)

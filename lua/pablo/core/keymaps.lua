@@ -8,6 +8,9 @@ map.set("i", "jj", "<Esc>")
 
 map.set("n", "<leader>nh", ":nohl<CR>")
 
+-- renames
+map.set("n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>", { noremap = true })
+
 -- move highlighted lines up/down
 map.set("v", "J", ":m '>+1<CR>gv=gv")
 map.set("v", "K", ":m '<-2<CR>gv=gv")
