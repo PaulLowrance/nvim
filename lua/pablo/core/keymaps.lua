@@ -56,3 +56,5 @@ map.set("n", "<leader>ff", builtin.find_files, {})
 map.set("n", "<leader>fg", builtin.live_grep, {})
 map.set("n", "<leader>fb", builtin.buffers, {})
 map.set("n", "<leader>fh", builtin.help_tags, {})
+
+--map.set("n", "<leader>ld", "<cmd>Lspsaga show_line_diagnostics<CR>", { noremap = true, silent = true, buffer = bufnr }) -- show  diagnostics for line
