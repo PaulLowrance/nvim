@@ -46,11 +46,13 @@ return packer.startup(function(use)
 
 	------ Navigation  ------
 	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
-	use("nvim-tree/nvim-tree.lua")
+	-- use("nvim-tree/nvim-tree.lua")
+	-- use("folke/which-key.nvim")
 
 	-- fuzzy finding w/ telescope
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dependency for better sorting performance
 	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- fuzzy finder
+	use({ "nvim-telescope/telescope-file-browser.nvim" })
 
 	-- buffer navigation with Harpoon
 	use("ThePrimeagen/harpoon")
@@ -114,6 +116,9 @@ return packer.startup(function(use)
 
 	-- git integration
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
+
+	-- Codium AI
+	use("Exafunction/codeium.vim")
 
 	if packer_bootstrap then
 		require("packer").sync()

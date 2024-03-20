@@ -5,7 +5,6 @@ if not transparent_status then
 end
 
 require("transparent").setup({
-	enable = true, -- enable transparent
 	extra_groups = {
 		"BufferLineTabClose",
 		"BufferlineBufferSelected",
@@ -14,5 +13,5 @@ require("transparent").setup({
 		"BufferLineSeparator",
 		"BufferLineIndicatorSelected",
 	},
-	exclude = {},
+	exclude_groups = {},
 })
