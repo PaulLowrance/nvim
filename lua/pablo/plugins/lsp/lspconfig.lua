@@ -131,6 +131,13 @@ lspconfig["lua_ls"].setup({
 	},
 })
 
+lspconfig["volar"].setup({
+	init_options = {
+		vue = {
+			hybridMode = false,
+		},
+	},
+})
 -- configure lua server (with special settings)
 --[[ lspconfig["sumneko_lua"].setup({
 	capabilities = capabilities,

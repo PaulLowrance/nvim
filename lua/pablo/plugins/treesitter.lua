@@ -24,9 +24,11 @@ treesitter.setup({
 		"html",
 		"css",
 		"markdown",
+		"markdown_inline",
 		"svelte",
 		"graphql",
 		"bash",
+		"vue",
 		"lua",
 		"vim",
 		"dockerfile",
@@ -35,4 +37,8 @@ treesitter.setup({
 	},
 	-- auto install above language parsers
 	auto_install = true,
+	markdown = {
+		-- enable markdown language support
+		enable = true,
+	},
 })
